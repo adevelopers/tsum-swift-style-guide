@@ -395,16 +395,16 @@ For conciseness, if a computed property is read-only, omit the get clause. The g
 **Preferred:**
 ```swift
 var diameter: Double {
-  return radius * 2
+    return radius * 2
 }
 ```
 
 **Not Preferred:**
 ```swift
 var diameter: Double {
-  get {
-    return radius * 2
-  }
+    get {
+        return radius * 2
+    }
 }
 ```
 
