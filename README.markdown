@@ -1,4 +1,4 @@
-# The Official TSUM Swift Style Guide.
+# The Official TSUM Swift Style Guide
 
 This style guide outlines the coding conventions of the iOS team at [TSUM Department Store](https://tsum.com).
 
