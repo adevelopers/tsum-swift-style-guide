@@ -423,7 +423,8 @@ For functions with long signatures, add line break for every argument and add an
 ```swift
 func reticulateSplines(spline: [Double], 
              adjustmentFactor: Double,
-            translateConstant: Int, comment: String) -> Bool {
+            translateConstant: Int, 
+                      comment: String) -> Bool {
     // Reticulate code goes here
 }
 ```
