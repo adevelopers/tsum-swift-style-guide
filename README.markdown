@@ -233,18 +233,18 @@ Aspirational methods not directly associated with the tutorial whose implementat
 **Not Preferred:**
 ```swift
 override func didReceiveMemoryWarning() {
-  super.didReceiveMemoryWarning()
-  // Dispose of any resources that can be recreated.
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
 }
 
 override func numberOfSections(in tableView: UITableView) -> Int {
-  // #warning Incomplete implementation, return the number of sections
-  return 1
+    // #warning Incomplete implementation, return the number of sections
+    return 1
 }
 
 override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-  // #warning Incomplete implementation, return the number of rows
-  return Database.contacts.count
+    // #warning Incomplete implementation, return the number of rows
+    return Database.contacts.count
 }
 
 ```
@@ -252,7 +252,7 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
 **Preferred:**
 ```swift
 override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-  return Database.contacts.count
+    return Database.contacts.count
 }
 ```
 ### Minimal Imports
