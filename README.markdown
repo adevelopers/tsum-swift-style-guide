@@ -24,6 +24,7 @@ This style guide outlines the coding conventions of the iOS team at [TSUM Depart
   * [Computed Properties](#computed-properties)
 * [Function Declarations](#function-declarations)
 * [Closure Expressions](#closure-expressions)
+* [Chained Methods](#chained-methods)
 * [Types](#types)
   * [Constants](#constants)
   * [Static Methods and Variable Type Properties](#static-methods-and-variable-type-properties)
