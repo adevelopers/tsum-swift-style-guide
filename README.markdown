@@ -425,16 +425,17 @@ Keep short function declarations on one line including the opening brace:
 
 ```swift
 func reticulateSplines(spline: [Double]) -> Bool {
-  // reticulate code goes here
+    // Reticulate code goes here
 }
 ```
 
-For functions with long signatures, add line breaks at appropriate points and add an extra indent on subsequent lines:
+For functions with long signatures, add line break for every argument and add an extra indent on subsequent lines:
 
 ```swift
-func reticulateSplines(spline: [Double], adjustmentFactor: Double,
-    translateConstant: Int, comment: String) -> Bool {
-  // reticulate code goes here
+func reticulateSplines(spline: [Double], 
+             adjustmentFactor: Double,
+            translateConstant: Int, comment: String) -> Bool {
+    // Reticulate code goes here
 }
 ```
 
