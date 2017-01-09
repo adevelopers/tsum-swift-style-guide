@@ -123,7 +123,7 @@ func namePickerShouldReload() -> Bool
 
 ### Use Type Inferred Context
 
-Use compiler inferred context to write shorter, clear code.  (Also see [Type Inference](#type-inference).)
+Use compiler inferred context to write shorter, clear code. (Also see [Type Inference](#type-inference).)
 
 **Preferred:**
 ```swift
