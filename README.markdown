@@ -260,16 +260,16 @@ Keep imports minimal. For example, don't import `UIKit` when importing `Foundati
 ## Spacing
 
 * Indent using 4 spaces rather than tabs to conserve space and help prevent line wrapping. Be sure to check this default setting in Xcode.
+* Tip: You can re-indent by selecting some code (or ⌘A to select all) and then Control-I (or Editor \ Structure \ Re-Indent in the menu).
   
-* Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
-* Tip: You can re-indent by selecting some code (or ⌘A to select all) and then Control-I (or Editor\Structure\Re-Indent in the menu).
+* Method braces and other braces (`if` / `else` / `switch` / `while` etc.) always open on the same line as the statement but close on a new line.
 
 **Preferred:**
 ```swift
 if user.isHappy {
-  // Do something
+    // Do something
 } else {
-  // Do something else
+    // Do something else
 }
 ```
 
@@ -277,10 +277,10 @@ if user.isHappy {
 ```swift
 if user.isHappy
 {
-  // Do something
+    // Do something
 }
 else {
-  // Do something else
+    // Do something else
 }
 ```
 
@@ -291,22 +291,20 @@ else {
 **Preferred:**
 ```swift
 class TestDatabase: Database {
-  var data: [String: CGFloat] = ["A": 1.2, "B": 3.2]
+    var data: [String: CGFloat] = ["A": 1.2, "B": 3.2]
 }
 ```
 
 **Not Preferred:**
 ```swift
 class TestDatabase : Database {
-  var data :[String:CGFloat] = ["A" : 1.2, "B":3.2]
+    var data :[String:CGFloat] = ["A" : 1.2, "B":3.2]
 }
 ```
 
-* Long lines should be wrapped at around 70 characters. A hard limit is intentionally not specified.
+* Long lines should be wrapped at around 80 characters. A hard limit is intentionally not specified.
 
 * Avoid trailing whitespaces at the ends of lines.
-
-* Add a single newline character at the end of each file.
 
 ## Comments
 
