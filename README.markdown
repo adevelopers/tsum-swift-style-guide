@@ -505,6 +505,12 @@ Always use Swift's native types when available. Swift offers bridging to Objecti
 
 **Preferred:**
 ```swift
+let width: Double = 120                              // Double
+let widthString = String(width)                      // String
+```
+
+**Not Preferred:**
+```swift
 let width = 120.0                                    // Double
 let widthString = (width as NSNumber).stringValue    // String
 ```
