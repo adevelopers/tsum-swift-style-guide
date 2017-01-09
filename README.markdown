@@ -175,33 +175,48 @@ let colour = "red"
 
 ## Code Organization
 
-Use extensions to organize your code into logical blocks of functionality. Each extension should be set off with a `// MARK: -` comment to keep things well-organized.
+Use extensions to organize your code into logical blocks of functionality. Each extension **SHOULD NOT** be set off with a `// MARK: -` comment, which duplicates declaration of extension.
 
 ### Protocol Conformance
 
- In particular, when adding protocol conformance to a model, prefer adding a separate extension for the protocol methods. This keeps the related methods grouped together with the protocol and can simplify instructions to add a protocol to a class with its associated methods.
+In particular, when adding protocol conformance to a model, prefer adding a separate extension for the protocol methods. This keeps the related methods grouped together with the protocol and can simplify instructions to add a protocol to a class with its associated methods.
 
 **Preferred:**
 ```swift
 class MyViewController: UIViewController {
-  // class stuff here
+    // Class stuff here
 }
 
-// MARK: - UITableViewDataSource
-extension MyViewController: UITableViewDataSource {
-  // table view data source methods
-}
-
-// MARK: - UIScrollViewDelegate
 extension MyViewController: UIScrollViewDelegate {
-  // scroll view delegate methods
+    // scrollView's delegate methods
+}
+
+extension MyViewController: UITableViewDataSource {
+    // tableView's data source methods
 }
 ```
 
 **Not Preferred:**
 ```swift
 class MyViewController: UIViewController, UITableViewDataSource, UIScrollViewDelegate {
-  // all methods
+    // All methods
+}
+```
+
+**Not Preferred:**
+```swift
+class MyViewController: UIViewController {
+    // Class stuff here
+}
+
+// MARK: - UIScrollViewDelegate
+extension MyViewController: UIScrollViewDelegate {
+    // scrollView's delegate methods
+}
+
+// MARK: - UITableViewDataSource
+extension MyViewController: UITableViewDataSource {
+    // tableView's data source methods
 }
 ```
 
