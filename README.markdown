@@ -22,7 +22,6 @@ This style guide outlines the coding conventions of the iOS team at [TSUM Depart
   * [Use of Self](#use-of-self)
   * [Protocol Conformance](#protocol-conformance)
   * [Computed Properties](#computed-properties)
-  * [Final](#final)
 * [Function Declarations](#function-declarations)
 * [Closure Expressions](#closure-expressions)
 * [Types](#types)
